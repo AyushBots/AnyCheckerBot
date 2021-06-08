@@ -30,11 +30,13 @@ if(strpos($text, "/start") === 0){
 
 I'm $USERNAMEBOT. I can do several Things!😆
 
+This Bot Is Made By @AyushBots ✨
+
 Click the Button Below to open help menu!</b>",
 	'parse_mode'=>'html',
 	'reply_to_message_id'=> $message_id,
 	'reply_markup'=>json_encode(['inline_keyboard'=>[
-	[['text'=>"Help 💬",'callback_data'=>"help"]],[['text'=>"Our Channel 🌐",'url'=>"https://t.me/IndianBots"],['text'=>"My Source Code ✅",'url'=>"https://github.com/IndianBots/AnyCheckerBot"]]
+	[['text'=>"Help 💬",'callback_data'=>"help"]],[['text'=>"Updates Channel ✨",'url'=>"https://t.me/AyushBots"],['text'=>"Report Bugs 🗞️",'url'=>"https://t.me/CyberBoyAyushBot"]]
   ],'resize_keyboard'=>true])
 	
   ]);
@@ -66,7 +68,8 @@ if($data == "help"){ //Sends Help Menu if Help Button is clicked
 	'chat_id'=>$chatid,
 	'message_id'=>$messageid,
 	'text'=>"<b>Hello there! I'm $USERNAMEBOT
-I can do Several Things!</b>
+I can do Several Things!
+Made By @AyushBots 🔥 </b>
 
 Click on the buttons below to get documentation about specific modules!",
 	'parse_mode'=>'html',
